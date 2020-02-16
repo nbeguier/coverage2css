@@ -1,20 +1,26 @@
 #!/usr/bin/env python3
-#-*- coding: utf-8 -*-
-""" Chrome Coverage to CSS file """
+"""
+Chrome Coverage to CSS file
+
+Copyright (c) 2020 Nicolas Beguier
+Licensed under the MIT License
+Written by Nicolas BEGUIER (nicolas_beguier@hotmail.com)
+"""
 
 # Standard library imports
 import sys
 import json
 
-# Third party library imports
-
 # Debug
-from pdb import set_trace as st
+# from pdb import set_trace as st
 
 JSON_COVERAGE = sys.argv[1]
 CSS_NAME = sys.argv[2]
 
 def main():
+    """
+    Main function
+    """
     with open(JSON_COVERAGE, 'r') as json_coverage_file:
         json_coverage = json.loads(json_coverage_file.read())
 
