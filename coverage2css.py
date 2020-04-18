@@ -26,12 +26,15 @@ def main():
 
     for coverage in json_coverage:
         css_name = coverage['url'].split('/')[-1]
+        print("> Detect '{}' in report".format(css_name))
         if CSS_NAME != css_name:
             continue
-        css_output_file = open(css_name, 'w+')
+        print(">> Match input file")
+        css_output_file = open(css_name+'.new', 'w+')
         for rng in enumerate(coverage['ranges']):
             css_output_file.write(coverage['text'][rng[1]['start']:rng[1]['end']])
         css_output_file.close()
+        print(">> Write {}.new".format(css_name))
 
 if __name__ == "__main__":
     main()
