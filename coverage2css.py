@@ -28,6 +28,7 @@ def main():
         css_name = coverage['url'].split('/')[-1]
         print("> Detect '{}' in report".format(css_name))
         if CSS_NAME != css_name:
+            print(f"{CSS_NAME} != {css_name}")
             continue
         print(">> Match input file")
         css_output_file = open(css_name+'.new', 'w+')
