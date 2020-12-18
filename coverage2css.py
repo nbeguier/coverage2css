@@ -17,6 +17,8 @@ import json
 JSON_COVERAGE = sys.argv[1]
 CSS_NAME = sys.argv[2]
 
+VERSION = '1.1.0'
+
 def main():
     """
     Main function
@@ -26,7 +28,7 @@ def main():
 
     for coverage in json_coverage:
         css_name = coverage['url'].split('/')[-1]
-        print("> Detect '{}' in report".format(css_name))
+        print(f"> Detect '{css_name}' in report")
         if CSS_NAME != css_name:
             print(f"{CSS_NAME} != {css_name}")
             continue
@@ -35,7 +37,7 @@ def main():
         for rng in enumerate(coverage['ranges']):
             css_output_file.write(coverage['text'][rng[1]['start']:rng[1]['end']])
         css_output_file.close()
-        print(">> Write {}.new".format(css_name))
+        print(f">> Write {css_name}.new")
 
 if __name__ == "__main__":
     main()
