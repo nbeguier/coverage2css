@@ -1,6 +1,6 @@
 # Coverage 2 CSS
 
-[![Build Status](https://travis-ci.com/nbeguier/coverage2css.svg?branch=master)](https://travis-ci.com/nbeguier/coverage2css) [![Python 3.6|3.8](https://img.shields.io/badge/python-3.6|3.8-green.svg)](https://www.python.org/) [![License](https://img.shields.io/github/license/nbeguier/coverage2css?color=blue)](https://github.com/nbeguier/coverage2css/blob/master/LICENSE)
+[![Build Status](https://travis-ci.com/nbeguier/coverage2css.svg?branch=master)](https://travis-ci.com/nbeguier/coverage2css) [![Python 3.6|3.9](https://img.shields.io/badge/python-3.6|3.9-green.svg)](https://www.python.org/) [![License](https://img.shields.io/github/license/nbeguier/coverage2css?color=blue)](https://github.com/nbeguier/coverage2css/blob/master/LICENSE)
 
 Uses the Chrome Coverage to extract used CSS from original CSS
 
