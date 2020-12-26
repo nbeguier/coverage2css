@@ -36,4 +36,4 @@ $ ./coverage2css.py Coverage-20200418T105522.json bootstrap.min.css
 Licensed under the [MIT License](https://github.com/nbeguier/coverage2css/blob/master/LICENSE).
 
 # Copyright
-Copyright 2020 Nicolas Béguier; ([nbeguier](https://beguier.eu/nicolas/) - nicolas_beguier[at]hotmail[dot]com)
+Copyright 2020-2021 Nicolas Béguier; ([nbeguier](https://beguier.eu/nicolas/) - nicolas_beguier[at]hotmail[dot]com)
